@@ -8,5 +8,5 @@ export interface PokemonListResponse {
   count: number;
   next: string | null; // тут будет либо строка, либо пустота
   previous: string | null;
-  result: PokemonListItem[]; // будет находиться массив из покемон айтемов
+  results: PokemonListItem[]; // будет находиться массив из покемон айтемов
 }
