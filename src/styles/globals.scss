@@ -1,1 +1,98 @@
+html {
+  &.is-lock {
+    overflow: hidden;
+  }
+  &::selection {
+    color: var(--color-main);
+  }
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--robotoMed),sans-serif;
+  justify-content: center;
+}
+
+h1,
+.h1 {
+
+  font-weight: 700;
+}
+
+h2,
+.h2 {
+
+  font-weight: 700;
+}
+
+h3,
+.h3 {
+
+  font-weight: 700;
+}
+
+h4,
+.h4 {
+
+  font-weight: 400;
+}
+
+h5,
+.h5 {
+
+  font-weight: 400;
+}
+
+h6,
+.h6 {
+
+  font-weight: 400;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+body {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #4a90e2 #f0f0f0; /* цвет ползунка и фон дорожки */
+}
+
+.go3958317564 {
+  line-height: 1;
+}
+
+html {
+  scrollbar-gutter: initial;
+}
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
