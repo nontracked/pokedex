@@ -10,3 +10,26 @@ export interface PokemonListResponse {
   previous: string | null;
   results: PokemonListItem[]; // будет находиться массив из покемон айтемов
 }
+
+export interface PokemonType { // Описываем структуру типа покемона (например, "electric" или "fire")
+  type: {
+    name: string
+  }
+}
+
+export interface PokemonStat {
+  base_stat: number,
+  stat:{
+    name:string
+  }
+}
+
+export interface PokemonDetails {
+  id:number,
+  name:string,
+  height: number,
+  weight:number,
+  types: PokemonType[],
+  stats: PokemonStat[],
+}
+
